@@ -44,7 +44,7 @@ yarn dev
 npm run dev
 ```
 
-Открой [http://localhost:5173](http://localhost) в браузере.
+Открой [http://localhost](http://localhost) в браузере.
 
 ## Возможности проекта
 
