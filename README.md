@@ -1,16 +1,60 @@
-# React + Vite
+# Portfolio Filters
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Это проект на **React + Vite**, демонстрирующий портфолио с фильтрами по категориям.  
+Пользователь может переключать отображение проектов по фильтрам и видеть карточки проектов.
 
-Currently, two official plugins are available:
+## Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18
+- Vite
+- CSS (стили в `App.css`)
+- ESLint (базовая конфигурация)
 
-## React Compiler
+## Структура проекта
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/components/` — компоненты приложения (`Portfolio.jsx`, `ProjectList.jsx`, `Toolbar.jsx`)  
+- `src/data.jsx` — данные проектов  
+- `src/img/` — изображения проектов  
+- `src/App.jsx` — корневой компонент приложения  
+- `src/App.css` — стили проекта  
+- `src/main.jsx` — точка входа приложения
 
-## Expanding the ESLint configuration
+## Установка и запуск
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Клонировать репозиторий:
+
+```bash
+git clone https://github.com/b1gfarmer/portfolio-filters.git
+cd portfolio-filters
+````
+
+2. Установить зависимости:
+
+```bash
+yarn install
+# или
+npm install
+```
+
+3. Запустить приложение в режиме разработки:
+
+```bash
+yarn dev
+# или
+npm run dev
+```
+
+Открой [http://localhost:5173](http://localhost) в браузере.
+
+## Возможности проекта
+
+* Фильтрация проектов по категориям
+* Адаптивная сетка карточек проектов
+* Минимальная стилизация через CSS
+* Поддержка React Fast Refresh через Vite
+
+## Примечания
+
+* Проект создан для выполнения тестового задания, поэтому шрифты и стили минимальные
+* Для иконок можно использовать [Material Icons](https://fonts.google.com/icons)
+
